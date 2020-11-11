@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "E-mwanafunzi"
+    }
+  },
+  "defaultProject": "E-mwanafunzi",
+  "cli": {
+    "analytics": "9bd22188-7e9a-4cf8-b076-aa390078df82"
+  }
 }
