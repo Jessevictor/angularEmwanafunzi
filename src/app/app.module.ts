@@ -11,6 +11,10 @@ import { ShopDComponent } from './modules/shopping/component/shop-d/shop-d.compo
 import { ShopEComponent } from './modules/shopping/component/shop-e/shop-e.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ViewComponent } from './modules/component/view/view.component';
+import { CartComponent } from './modules/component/cart/cart.component';
+import { DeliveryComponent } from './modules/component/delivery/delivery.component';
+import { PaymentComponent } from './modules/component/payment/payment.component';
 
 
 @NgModule({
@@ -23,6 +27,10 @@ import { FooterComponent } from './footer/footer.component';
     ShopEComponent,
     NavbarComponent,
     FooterComponent,
+    ViewComponent,
+    CartComponent,
+    DeliveryComponent,
+    PaymentComponent,
    
   ],
   imports: [

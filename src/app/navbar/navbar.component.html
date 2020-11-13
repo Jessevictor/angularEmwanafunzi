@@ -33,22 +33,22 @@
               class="dropdown-toggle waves-light" mdbWavesEffect>
               Category
             </a>
-            <div class="dropdown-menu dropdown-primary" style="color: navy;">
-              <a class="dropdown-item" routerLink="shopA">Snacks</a>
-              <a class="dropdown-item" routerLink="shopB">Toiletries</a>
-              <a class="dropdown-item" routerLink="shopC">Books</a>
-              <a class="dropdown-item" routerLink="shopD">Stationery</a>
-              <a class="dropdown-item" routerLink="shopE">Uniform</a>
+            <div class="dropdown-menu dropdown-primary">
+              <a class="dropdown-item" routerLink="shopA" style="color: navy;">Snacks</a>
+              <a class="dropdown-item" routerLink="shopB" style="color: navy;">Toiletries</a>
+              <a class="dropdown-item" routerLink="shopC" style="color: navy;">Books</a>
+              <a class="dropdown-item" routerLink="shopD" style="color: navy;">Stationery</a>
+              <a class="dropdown-item" routerLink="shopE" style="color: navy;">Uniform</a>
 
             </div>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link waves-effect">
+          <a routerLink="/cart" class="nav-link waves-effect">
             <span class="badge red z-depth-1 mr-1"> 1 </span>
             <i class="fas fa-shopping-cart" style="color: navy;"></i>
-            <span class="clearfix d-none d-sm-inline-block" style="color: navy;"> Cart </span>
+            <span class="clearfix d-none d-sm-inline-block" style="color: navy;" > Cart </span>
           </a>
         </li>
       </ul>
@@ -68,7 +68,7 @@
         </form>
       </div>
       <!-- search form end -->
-      <a style="padding-top: 5px; padding-left: 100px; color: navy;" routerLink="#"><i class="fa fa-log-out" aria-hidden="true"></i> Log Out
+      <a style="padding-top: 5px; padding-left: 100px; color: navy;" routerLink="/"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out
       </a>
     </div>
 

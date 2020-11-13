@@ -6,6 +6,10 @@ import { ShopCComponent } from './modules/shopping/component/shop-c/shop-c.compo
 import { ShopDComponent } from './modules/shopping/component/shop-d/shop-d.component';
 import { ShopEComponent } from './modules/shopping/component/shop-e/shop-e.component';
 import { HomeComponent } from './modules/home/component/home/home.component';
+import { ViewComponent } from './modules/component/view/view.component';
+import { CartComponent } from './modules/component/cart/cart.component';
+import { PaymentComponent } from './modules/component/payment/payment.component';
+import { DeliveryComponent } from './modules/component/delivery/delivery.component';
 
 
 
@@ -16,6 +20,10 @@ const routes: Routes = [
   { path: 'shopD', component:ShopDComponent},
   { path: 'shopE', component:ShopEComponent},
   { path: '', component:HomeComponent},
+  { path: 'view', component:ViewComponent},
+  { path: 'cart', component:CartComponent},
+  { path: 'payment', component:PaymentComponent},
+  { path: 'delivery', component:DeliveryComponent},
 ];
 
 @NgModule({
