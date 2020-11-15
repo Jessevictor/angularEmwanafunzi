@@ -14,65 +14,16 @@
 <!-- Start of Shopping Grid -->
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" *ngFor='let shop of shops'>
             <div class="item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROIndz-ylChaMlsawtC7C2kdZnf6at0UegxrsCcJzR7hozG4BSAG-IHS48HXdr4PjJ_JHux9G4gAdCqPOtIti7SMqcivEBPPkKkUPfjzg&usqp=CAU&ec=45725305"
-                    alt="item">
-                <h4>Bic Pens</h4>
-                <p>Ksh 25</p>
+                <img src="{{shop.image}}" alt="item">
+                <h4>{{shop.name}}</h4>
+                <p>Ksh {{shop.cost}}-{{shop.quantity}}</p>
                 <button routerLink="/view"><i class="fas fa-eye"></i></button>
                 <button routerLink="/cart"><i class="fas fa-shopping-cart"></i></button>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="item">
-                <img src="https://hips.hearstapps.com/elleit.h-cdn.co/assets/15/37/original/original-arte-blu-della-gomma-rossa-19440149-1-ita-it-a-cosa-serve-davvero-la-parte-blu-della-gomma-rossa-jpg.jpg"
-                    alt="item">
-                <h4>Erasor</h4>
-                <p>Ksh 20</p>
-                <button><i class="fas fa-eye"></i></button>
-                <button><i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="item">
-                <img src="https://lh3.googleusercontent.com/proxy/rfa5XC_KhPtVpK6bMEmFH_4SsBm8gXdsJeEeEqFbnpArJyPJrqQCoxh91bM3Jue_ET34j39VZqBbzyPxGDmFBZHD1x2LKQ0Ckn3-"
-                    alt="item">
-                <h4>Sharpener</h4>
-                <p>Ksh 35</p>
-                <button><i class="fas fa-eye"></i></button>
-                <button><i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="item">
-                <img src="https://5.imimg.com/data5/KB/GS/MY-9085895/highlighter-pen-500x500.jpg">
-                <h4>Highlighter</h4>
-                <p>Ksh 60</p>
-                <button><i class="fas fa-eye"></i></button>
-                <button><i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="item">
-                <img src="https://i.ebayimg.com/images/g/mXUAAOSw5dlaD9f6/s-l300.jpg"
-                    alt="item">
-                <h4>Pencil</h4>
-                <p>Ksh 20</p>
-                <button><i class="fas fa-eye"></i></button>
-                <button><i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="item">
-                <img src="https://i.pinimg.com/originals/b3/19/48/b31948e925ed542dd3f1af416167af2f.jpg"
-                    alt="item">
-                <h4>Sticky Notes</h4>
-                <p>Ksh 120</p>
-                <button><i class="fas fa-eye"></i></button>
-                <button><i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
+        </div>       
     </div>
 </div>
 <!-- End of Shopping Grid -->
+
