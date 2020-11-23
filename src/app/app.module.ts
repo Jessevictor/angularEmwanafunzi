@@ -18,6 +18,7 @@ import { DeliveryComponent } from './modules/component/delivery/delivery.compone
 import { PaymentComponent } from './modules/component/payment/payment.component';
 
 
+import { AuthModule } from './auth/auth.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { PaymentComponent } from './modules/component/payment/payment.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

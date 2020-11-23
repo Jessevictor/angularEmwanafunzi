@@ -1,0 +1,14 @@
+
+  .background {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/06/05/36/landscape-1802337_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+
+  .blur {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(2px); 
+    /* width: 100%; */
+  }
