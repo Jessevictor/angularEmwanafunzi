@@ -40,7 +40,8 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
-    AuthModule
+    AuthModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
