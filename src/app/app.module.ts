@@ -16,6 +16,8 @@ import { ViewComponent } from './modules/component/view/view.component';
 import { CartComponent } from './modules/component/cart/cart.component';
 import { DeliveryComponent } from './modules/component/delivery/delivery.component';
 import { PaymentComponent } from './modules/component/payment/payment.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { PaymentComponent } from './modules/component/payment/payment.component'
     CartComponent,
     DeliveryComponent,
     PaymentComponent,
+    LoginComponent,
+    RegisterComponent,
    
   ],
   imports: [

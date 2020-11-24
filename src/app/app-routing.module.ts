@@ -10,6 +10,9 @@ import { ViewComponent } from './modules/component/view/view.component';
 import { CartComponent } from './modules/component/cart/cart.component';
 import { PaymentComponent } from './modules/component/payment/payment.component';
 import { DeliveryComponent } from './modules/component/delivery/delivery.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
 
 
 
@@ -24,6 +27,9 @@ const routes: Routes = [
   { path: 'cart', component:CartComponent},
   { path: 'payment', component:PaymentComponent},
   { path: 'delivery', component:DeliveryComponent},
+  { path: 'register', component:RegisterComponent},
+  { path: 'login', component:LoginComponent},
+
 ];
 
 @NgModule({
