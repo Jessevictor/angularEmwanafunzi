@@ -20,11 +20,11 @@
     font-weight: bold;
 }
 
-.delivery-box .user-box {
+.delivery-box .form-group {
 	position: relative;
 }
 
-.delivery-box .user-box input {
+.delivery-box .form-group input {
 	width: 100%;
 	padding: 10px 0;
 	font-size: 16px;
@@ -36,7 +36,7 @@
 	background: transparent;
 }
 
-.delivery-box .user-box label {
+.delivery-box .form-group label {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -48,7 +48,7 @@
 	transition: .5s;
 }
 
-.delivery-box .user-box input:focus ~ label, .login-box .user-box input:valid ~ label {
+.delivery-box .form-group input:focus ~ label, .login-box .form-group input:valid ~ label {
 	top: -20px; 
 	left: 0px; 
 	color: #03E9F4;

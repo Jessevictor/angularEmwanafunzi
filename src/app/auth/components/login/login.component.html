@@ -4,18 +4,93 @@
 <div class="login-box" style="margin-top:50px">
   <h2 style="font-weight: bold;"><span style="color: orange;">e</span>Mwanafunzi</h2>
   <form action="">
-      <div class="user-box">
-          <input type="text" name="" required="">
-          <label>Username</label>
-      </div>
-      <div class="user-box">
-          <input type="email" name="" required="">
-          <label>Email</label>
-      </div>
-      <div class="user-box">
-          <input type="password" name="" required="">
-          <label>Password</label>
-      </div>
+    <div class="form-group">
+        <input 
+        required
+        minlength="4"
+        maxlength="30"
+        ngModel
+        name="userName"
+        #userName="ngModel"
+        id="userName" 
+        type="text"
+        class="form-control">
+        <label for="userName">Username</label>
+    </div>
+    <div
+        class="alert alert-danger"
+        *ngIf="userName.touched && !userName.valid">
+        <div *ngIf="userName.errors.required">
+            Username is required
+        </div>
+        <div *ngIf="userName.errors.minlength">
+            Username must be more than 4 characters
+        </div>
+        <div *ngIf="userName.errors.maxlength">
+            Username must be less than 30 characters
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <div class="form-group">
+            <input 
+            required
+            minlength="4"
+            maxlength="30"
+            ngModel
+            name="email"
+            #email="ngModel"
+            id="email" 
+            type="email"
+            class="form-control">
+            <label for="email">Email</label>
+        </div>
+        <div
+            class="alert alert-danger"
+            *ngIf="email.touched && !email.valid">
+            <div *ngIf="email.errors.required">
+                Email is required
+            </div>
+            <div *ngIf="email.errors.minlength">
+                Email must be more than 4 characters
+            </div>
+            <div *ngIf="email.errors.maxlength">
+                Email must be less than 30 characters
+            </div>
+            <!-- <div *ngIf="studentName.errors.pattern">
+                Invalid email
+            </div> -->
+
+        </div>
+    </div>
+    <div class="form-group">
+        <input 
+        required
+        minlength="8"
+        maxlength="30"
+        ngModel
+        name="password"
+        #password="ngModel"
+        id="password" 
+        type="password"
+        class="form-control">
+        <label for="password">Password</label>
+    </div>
+    <div
+        class="alert alert-danger"
+        *ngIf="password.touched && !password.valid">
+        <div *ngIf="password.errors.required">
+            Password is required
+        </div>
+        <div *ngIf="password.errors.minlength">
+            Password must be more than 8 characters
+        </div>
+        <div *ngIf="password.errors.maxlength">
+            Password must be less than 30 characters
+        </div>
+
+    </div>
       <a routerLink="/">
           <span></span>
           <span></span>
